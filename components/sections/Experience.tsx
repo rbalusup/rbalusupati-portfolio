@@ -8,7 +8,7 @@ export default function Experience() {
       id="experience"
       className="container-width section-spacing border-t border-slate-200"
     >
-      <h2 className="section-title">Experience</h2>
+      <h2 className="section-title">Professional Experience</h2>
       <div className="space-y-12">
         {experience.map((exp) => (
           <div
@@ -21,20 +21,41 @@ export default function Experience() {
                   {exp.title}
                 </h3>
                 <p className="text-slate-600 font-medium">{exp.company}</p>
+                <p className="text-sm text-slate-500 mt-0.5">{exp.location}</p>
               </div>
-              <span className="text-sm font-medium text-slate-600 whitespace-nowrap">
-                {exp.period}
-              </span>
+              <div className="flex flex-col items-end gap-1 shrink-0">
+                <span className="text-sm font-medium text-slate-600 whitespace-nowrap">
+                  {exp.period}
+                </span>
+                <span
+                  className={`text-xs font-medium px-2 py-0.5 rounded whitespace-nowrap ${
+                    exp.employmentType === "Full-time"
+                      ? "bg-green-50 text-green-700 border border-green-200"
+                      : "bg-blue-50 text-blue-700 border border-blue-200"
+                  }`}
+                >
+                  {exp.employmentType}
+                </span>
+              </div>
             </div>
             <p className="text-slate-700 mb-4">{exp.description}</p>
-            <ul className="space-y-2">
+            <ul className="space-y-2 mb-4">
               {exp.achievements.map((achievement, aIdx) => (
                 <li key={aIdx} className="text-sm text-slate-700 flex gap-3">
-                  <span className="text-slate-400 mt-1 flex-shrink-0">•</span>
+                  <span className="text-slate-400 mt-1 shrink-0">•</span>
                   <span>{achievement}</span>
                 </li>
               ))}
             </ul>
+            {exp.technologies && exp.technologies.length > 0 && (
+              <div className="flex flex-wrap mt-3">
+                {exp.technologies.map((tech, tIdx) => (
+                  <span key={tIdx} className="tag">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            )}
           </div>
         ))}
       </div>

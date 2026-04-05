@@ -22,6 +22,12 @@ export const metadata: Metadata = {
     "Serverless",
     "Distributed Systems",
     "Data Engineering",
+    "Cloud Security",
+    "Full-Stack Development",
+    "Java",
+    "Python",
+    "Go",
+    "Kotlin",
   ],
   authors: [{ name: "Raj Balusupati" }],
   openGraph: {

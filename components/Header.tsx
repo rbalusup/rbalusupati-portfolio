@@ -9,7 +9,7 @@ export default function Header() {
         <Link href="/" className="text-xl font-bold">
           Rajasekhar Balusupati
         </Link>
-        <div className="flex gap-8">
+        <div className="flex gap-6">
           <Link
             href="#about"
             className="text-sm font-medium hover:text-slate-600"
@@ -20,13 +20,13 @@ export default function Header() {
             href="#experience"
             className="text-sm font-medium hover:text-slate-600"
           >
-            Experience
+            Professional Experience
           </Link>
           <Link
             href="#projects"
             className="text-sm font-medium hover:text-slate-600"
           >
-            Projects
+            Personal Projects
           </Link>
           <Link
             href="#skills"

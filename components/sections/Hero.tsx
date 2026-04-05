@@ -6,11 +6,13 @@ export default function Hero() {
   return (
     <section className="container-width section-spacing pt-24">
       <div className="max-w-2xl">
-        <h1 className="mb-6">Senior AI/ML Engineer</h1>
+        <h1 className="mb-6">Technology Leader</h1>
         <p className="text-lg mb-8 text-slate-600">
-          Building production AI systems at scale. Multi-agent orchestration,
-          RAG pipelines, and cloud-native infrastructure. Currently at Centene,
-          previously at Franklin Templeton and Target.
+          Building scalable distributed systems and production AI solutions that
+          drive business transformation. Deep expertise in multi-agent
+          orchestration, RAG pipelines, cloud-native infrastructure, and
+          enterprise modernization across cloud security, data engineering,
+          healthcare, fintech, and retail.
         </p>
         <div className="flex gap-4">
           <Link href="#projects" className="button-primary">

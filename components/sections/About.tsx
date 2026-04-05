@@ -11,11 +11,12 @@ export default function About() {
       <h2 className="section-title">About</h2>
 
       <div className="space-y-6 max-w-3xl">
-        <div>
-          <p className="text-lg font-semibold text-slate-900 mb-4">
-            {about.headline}
-          </p>
-          <p className="text-slate-700 leading-relaxed">{about.bio}</p>
+        <div className="space-y-4">
+          {about.bio.map((paragraph, idx) => (
+            <p key={idx} className="text-slate-700 leading-relaxed">
+              {paragraph}
+            </p>
+          ))}
         </div>
 
         <div className="flex flex-col sm:flex-row gap-6 text-slate-600">
@@ -25,7 +26,6 @@ export default function About() {
           </span>
         </div>
 
-        {/* Social Links */}
         <div className="flex gap-6 pt-4 border-t border-slate-200">
           {socialLinks.map((link) => (
             <a
