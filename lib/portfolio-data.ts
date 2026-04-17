@@ -63,7 +63,7 @@ export const experience = [
   },
   {
     id: "franklin-templeton",
-    title: "Full-Stack Engineer / GenAI Engineer",
+    title: "Full-Stack Engineer / AI Engineer",
     company: "Franklin Templeton (via Blend360  LLC)",
     location: "Remote (San Mateo, CA)",
     period: "Oct 2024 – Jan 2025",
