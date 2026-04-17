@@ -20,7 +20,7 @@ export const socialLinks = [
 export const experience = [
   {
     id: "centene",
-    title: "Lead Application Engineer / Cloud Architect",
+    title: "Lead Application Engineer / AI Architect",
     company: "Centene Corporation (via APEX Systems LLC)",
     location: "Remote (Clayton, MO)",
     period: "Mar 2025 – Feb 2026",
