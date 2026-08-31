@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     "RAG Pipelines",
     "LangChain",
     "Claude API",
+    "Claude Code",
     "Bedrock",
     "Kubernetes",
     "Docker",
