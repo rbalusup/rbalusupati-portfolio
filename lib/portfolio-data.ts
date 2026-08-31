@@ -8,7 +8,7 @@ export const about = {
   ],
   location: "Tracy, CA",
   openToWork:
-    "Open to Technology Leadership, Principal Engineer, and Staff Engineering roles",
+    "Open to Technology Leadership, Solution Architect, AI Engineer, Principal Engineer, and Staff Engineering roles",
 };
 
 export const socialLinks = [
@@ -19,11 +19,50 @@ export const socialLinks = [
 
 export const experience = [
   {
+    id: "rrd",
+    title: "AI Engineer / AI Architect",
+    company: "RR Digital Media",
+    location: "Remote",
+    period: "Apr 2026 – Present",
+    employmentType: "Contract",
+    description:
+      "Built Serverless legal claims processing platform on AWS with Salesforce backend",
+    achievements: [
+      "Architected and built an end-to-end serverless legal claims (mass-arbitration) processing platform on AWS with a Salesforce-native backend, automating the entire lifecycle from multi-channel intake through AI-powered proof evaluation to case management and bulk export; delivered as an independent consultant leveraging Claude Code throughout the codebase using Python3.14 – including custom Skills and Hooks, for repeatable, standards-compliance development - in a fast-paced startup environment, collaborating directly with the founding partners, and a business analyst on requirements and prioritization.",
+      "Designed and orchestrated the core AI proof-evaluation pipeline via AWS Step Functions across document conversion, Textract OCR, and Claude analysis stages, calling Claude Haiku and Claude Sonnet through both AWS Bedrock and the direct Anthropic API, with 7 core Lambda functions and configurable business-rule postprocessing to generate claim verdicts.",
+      "Engineered 9+ CloudFormation stacks and SAM templates as Infrastructure-as-Code covering storage, database, compute, webhook ingress, and monitoring; built automated deployment/teardown scripts and cross-compiled binary Lambda layers (Pillow, pypdfium2) for arm64.",
+      "Integrated the platform with SMS Magic, the Jotform API, and the Experian Identity Append API for claim intake and identity enrichment, routed through AWS API Gateway → SQS → Lambda consumers, with JWT Bearer-authenticated Salesforce sync and SSM SecureStrings-based credential management across all third-party APIs.",
+      "Designed a single-table DynamoDB architecture with GSIs for efficient querying of campaign metadata and claimant data.",
+      "Built the Salesforce administrative frontend using Lightning Web Components, Apex, and Salesforce Agentforce on a 7-object Master-Detail data model, including bulk CSV export via Lambda/S3 signed URLs and an intelligent contact/claim deduplication service, giving legal and ops teams a self-serve interface for claim and proof tracking.",
+      "Established CloudWatch alarms and SNS-based monitoring for Lambda errors, DynamoDB throttling, and Salesforce API limit consumption, plus correlation-ID request tracing; authored architecture and developer markdown files to support the small founding team.",
+    ],
+    technologies: [
+      "Python",
+      "AWS Bedrock",
+      "Claude Sonnet 3.7",
+      "Claude Code",
+      "Salesforce",
+      "AWS Lambda",
+      "Step Functions",
+      "EventBridge",
+      "Textract",
+      "SES",
+      "S3",
+      "DynamoDB",
+      "SMS Magic",
+      "Jotform",
+      "CloudFormation",
+      "Docker",
+      "GitLab CI/CD",
+      "Pydantic",
+    ],
+  },
+  {
     id: "centene",
     title: "Lead Application Engineer / AI Architect",
     company: "Centene Corporation (via APEX Systems LLC)",
     location: "Remote (Clayton, MO)",
-    period: "Mar 2025 – Feb 2026",
+    period: "Mar 2025 – Jan 2026",
     employmentType: "Contract",
     description:
       "Lead AI/ML engineer building Serverless Intelligent Document Processing (IDP) Platform, production LLM systems, and multi-agent pipelines for healthcare operations at scale.",
@@ -232,6 +271,26 @@ export const experience = [
 ];
 
 export const certifications = [
+  {
+    id: "aws-certified-solution-architect-professional",
+    name: "AWS Certified Solutions Architect - Professional",
+    issuer: "AWS",
+  },
+  {
+    id: "aws-certified-generative-ai-developer-professional",
+    name: "AWS Certified Generative AI Developer - Professional",
+    issuer: "AWS",
+  },
+  {
+    id: "neo4j-graphrag-python-mcp-tools",
+    name: "Building GraphRAG Python MCP tools",
+    issuer: "Neo4J",
+  },
+  {
+    id: "vector-indexes-unstructured-data",
+    name: "Introduction to Vector Indexes and Unstructured Data",
+    issuer: "Neo4J",
+  },
   {
     id: "claude-bedrock",
     name: "Claude with Amazon Bedrock",
