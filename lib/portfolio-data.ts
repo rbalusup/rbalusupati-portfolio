@@ -21,9 +21,9 @@ export const experience = [
   {
     id: "rrd",
     title: "AI Engineer / AI Architect",
-    company: "RR Digital Media",
+    company: "Agile Resources Inc",
     location: "Remote",
-    period: "Apr 2026 – Present",
+    period: "Apr 2026 – Sep 2026",
     employmentType: "Contract",
     description:
       "Built Serverless legal claims processing platform on AWS with Salesforce backend",
