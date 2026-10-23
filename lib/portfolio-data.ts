@@ -21,7 +21,7 @@ export const experience = [
   {
     id: "rrd",
     title: "AI Engineer / AI Architect",
-    company: "Agile Resources Inc",
+    company: "Confidential (via Agile Resources Inc)",
     location: "Remote",
     period: "Apr 2026 – Sep 2026",
     employmentType: "Contract",
